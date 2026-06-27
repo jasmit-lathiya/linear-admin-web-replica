@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Roboto Condensed", sans-serif;
+  --color-primaryColor: #1d4268;
+  --color-primaryLightColor: #275982;
+  --color-secondaryColor: #6a95b9;
+  --color-ternaryColor: #05a2a1;
+  --color-selected: #c9dbdd;
+  --color-highlight: #d9e3e1;
+  --color-blurColor: rgba(255, 255, 255, 0.2);
+}
+
+html.dark{
+  --color-primaryColor: #bde1ff;
+  --color-primaryLightColor: #9ed3ff;
+  --color-secondaryColor: #4e8dc1;
+  --color-ternaryColor: #0398ff;
+  --color-selected: #022b53;
+  --color-highlight: #03244a;
+  --color-blurColor: rgba(59, 130, 246, 0.1);
+}
+
+body{
+  color: var(--color-primaryColor);;
+}
+
+/* Hidden by default */
+.custom-scrollbar {
+  overflow-y: auto;
+
+  /* Firefox */
+  scrollbar-width: none;
+}
+
+/* Chrome, Edge, Safari */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Show on hover */
+.custom-scrollbar:hover {
+  scrollbar-width: thin;
+  scrollbar-color: #c6dbdd transparent;
+}
+
+
+
+.custom-scrollbar:hover::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: #c6dbdd;
+  border-radius: 9999px;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb:hover {
+  background: #94b3b3;
+}
