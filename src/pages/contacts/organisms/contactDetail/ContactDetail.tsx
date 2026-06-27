@@ -1,7 +1,6 @@
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import { CONTACTS } from '../../../../constants/contacts';
 import ContactDetailRow from '../../molecules/contactDetailRow';
-// import ProfileIcon from "../../../../assets/icons/profile.svg";
 import {
   CircleMinus,
   Edit,
@@ -15,7 +14,6 @@ import {
 
 const ContactDetail = () => {
   const [searchParams] = useSearchParams();
-  const navigate = useNavigate();
   const id = searchParams.get('contact');
 
   if (!id) {
